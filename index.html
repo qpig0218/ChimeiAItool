@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="2025年最全AI工具清單！23個類別，專業與個人必備，提升效率與創意，立即探索！">
-    <meta name="keywords" content="AI工具, 2025最佳AI, Midjourney, Synthesia, ChatGPT, NotebookLM, 效率提升, 創意設計, AI應用">
+    <meta name="keywords" content="AI工具, 2025最佳AI, ChatGPT, Midjourney, Synthesia, NotebookLM, 效率提升, 創意設計, AI應用">
     <meta name="author" content="您的名字">
     <title>2025年最全AI工具清單 - 23類效率與創意神器</title>
     <style>
@@ -66,6 +66,10 @@
             width: 100%;
             margin-top: 20px;
         }
+        #counter {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
         a {
             color: #3498db;
             text-decoration: none;
@@ -99,8 +103,8 @@
             </tr>
             <tr>
                 <td>AI助理（聊天機器人）</td>
-                <td><a href="https://chat.openai.com">ChatGPT</a>, <a href="https://claude.ai">Claude</a>, <a href="https://gemini.google.com">Gemini</a>, <a href="https://deepseek.com">DeepSeek</a>, <a href="https://xai.com">Grok</a>, <a href="https://felo.ai">Felo</a></td>
-                <td>適合寫作、編碼、研究，多模態功能，<span class="highlight">Felo還支援多語言翻譯與搜尋</span>，超實用！</td>
+                <td><a href="https://chat.openai.com">ChatGPT</a>, <a href="https://claude.ai">Claude</a>, <a href="https://gemini.google.com">Gemini</a>, <a href="https://deepseek.com">DeepSeek</a>, <a href="https://xai.com">Grok</a>, <a href="https://felo.ai">Felo</a>, <a href="https://copilot.microsoft.com">Copilot</a></td>
+                <td>適合寫作、編碼、研究，多模態功能，<span class="highlight">Felo支援多語言翻譯與搜尋</span>。</td>
             </tr>
             <tr>
                 <td>AI視頻生成工具</td>
@@ -222,7 +226,16 @@
 
     <footer>
         <p>💬 你最愛哪個AI工具？留言告訴我，或分享這頁給朋友，一起探索AI魔法！<br>
-        © 2025 奇美醫院教學中心、實證醫學暨醫療政策中心、數位賦能小組、本一科技</p>
+        © 2025 奇美醫院教學中心、實證醫學及醫療政策中心、數位賦能小組、本一科技</p>
+        <div id="counter">瀏覽次數: <span id="visitCount">0</span></div>
     </footer>
+
+    <script>
+        // 瀏覽計數器
+        let visitCount = localStorage.getItem('visitCount') || 0;
+        visitCount = parseInt(visitCount) + 1;
+        localStorage.setItem('visitCount', visitCount);
+        document.getElementById('visitCount').innerText = visitCount;
+    </script>
 </body>
 </html>
